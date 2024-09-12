@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Katik</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Katik</h1>
+        <p>Hai Bro and Sis selamat datang di Katik</p>
+        <p>Sebuah web app sederhana untuk menghitung nilai luas dan keliling dari Segitiga dan Jajargenjang </p>
+        <div class="buttons">
+            <button onclick="lihat('segitiga')">Luas Segitiga</button>
+            <button onclick="lihat('ksegitiga')">Keliling Segitiga</button>
+            <button onclick="lihat('jajargenjang')">Luas Jajargenjang</button>
+            <button onclick="lihat('kjajargenjang')">Keliling Jajargenjang</button>
+        </div>
+
+        <div id="lsegitiga" class="form hidden">
+            <p>Rumus Luas Segitiga</p>
+            <img src="segitiga.png" alt="Luas Segitiga">
+            <b><p>L = 1/2 x a x t</p></b>
+            <p>dimana</p>
+            <p>L = Luas<br>a = Alas<br>t = Tinggi</p>
+            <hr>
+            <h2>Hitung Luas Segitiga</h2>
+            <input type="number" id="alas" placeholder="Nilai Alas">
+            <br>
+            <input type="number" id="tinggi" placeholder="Nilai Tinggi">
+            <br>
+            <p id="hasil-s"></p>
+            <button onclick="luassegitiga()">Hitung</button>
+            <button onclick="resetsegitiga()">Reset</button>
+        </div>
+        
+        <div id="ljajargenjang" class="form hidden">
+            <p>Rumus Luas Jajargenjang</p>
+            <img src="jajargenjang.png" alt="Luas Jajargenjang">
+            <b><p>L = a x t</p></b>
+            <p>dimana</p>
+            <p>L = Luas<br>a = Alas<br>t = Tinggi</p>
+            <hr>
+            <h2>Hitung Luas Jajargenjang</h2>
+            <input type="number" id="alas-j" placeholder="Nilai Alas">
+            <br>
+            <input type="number" id="tinggi-j" placeholder="Nilai Tinggi">
+            <br>
+            <p id="hasil-j"></p>
+            <button onclick="luasjajargenjang()">Hitung</button>
+            <button onclick="resetjajargenjang()">Reset</button>
+        </div>
+
+        <div id="ksegitiga" class="form hidden">
+            <p>Rumus Keliling Segitiga</p>
+            <img src="ksegitiga.png" alt="Keliling Segitiga">
+            <b><p>K = a + b + c</p></b>
+            <p>dimana</p>
+            <p>K = Keliling<br>a = Sisi 1<br>b = Sisi 2<br>c = Sisi 3</p>
+            <hr>
+            <h2>Hitung Keliling Segitiga</h2>
+            <input type="number" id="s1" placeholder="Nilai Sisi 1">
+            <br>
+            <input type="number" id="s2" placeholder="Nilai Sisi 2">
+            <br>
+            <input type="number" id="s3" placeholder="Nilai Sisi 3">
+            <br>
+            <p id="hasil-ks"></p>
+            <button onclick="kelilingsegitiga()">Hitung</button>
+            <button onclick="resetksegitiga()">Reset</button>
+        </div>
+
+        <div id="kjajargenjang" class="form hidden">
+            <p>Rumus Keliling Jajargenjang</p>
+            <img src="jajargenjang.png" alt="Keliling Jajargenjang">
+            <b><p>K = 2 (a + b)</p></b>
+            <p>dimana</p>
+            <p>K = Keliling<br>a = Sisi Bawah<br>b = Sisi Miring</p>
+            <hr>
+            <h2>Hitung Keliling Jajargenjang</h2>
+            <input type="number" id="sb" placeholder="Nilai Sisi Bawah">
+            <br>
+            <input type="number" id="sm" placeholder="Nilai Sisi Miring">
+            <br>
+            <p id="hasil-kj"></p>
+            <button onclick="kelilingjajargenjang()">Hitung</button>
+            <button onclick="resetkjajargenjang()">Reset</button>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

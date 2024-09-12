@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    width: 500px;
+}
+
+button {
+    background-color: #555555; /* Default background */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for all states */
+}
+
+button:hover {
+    background-color: #666; /* Slightly lighter on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* White shadow for focus */
+}
+
+button:active {
+    background-color: #fdfdfd; /* Darker background when clicked */
+    transform: scale(0.98); /* Slight shrink */
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 8px;
+}
